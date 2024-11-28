@@ -1,0 +1,26 @@
+body{
+    background-color: #F4EEEA;
+    font-size: 40px;
+  }
+  .container{
+    display:flex;
+    background-color:#D7C7D3 ;
+    text-align: center;
+  }
+  .title{
+    color: #604D4C;
+  }
+  .cart{
+    margin-left: 450px;
+    margin-right: 0;
+  }
+  .container1{
+    display:flex;
+    gap:20px;
+    text-align:center;
+    
+    }
+    button:hover {
+              background-color: #D5EDF6 ; 
+          }
+  
