@@ -1,6 +1,6 @@
 import React from 'react';
 import './beds.css';
-
+import Cart from './cart.js';
 const Beds = () => {
     const items = [
         { id:1,
@@ -37,6 +37,7 @@ return (
                         <p>Size: {item.size}</p>
                         <p>Dimensions: {item.dimensions}</p>
                         <p>Price: {item.price}</p>
+                        <button className = "add to cart" onCilck = {()=> <AddToCart/>} >ADD TO CART</button>
                     </li>
                 ))}
             </ul>

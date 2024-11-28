@@ -1,10 +1,11 @@
 import React from 'react';
-import './open.css';
+import './openComponent.css';
+import Categories from './categories.js';
 
-function Open () {
+function OpenComponent () {
 
     function start_shop(){
-        window.location.href = "categories.js";
+        <Categories/>
     }
 
     return (
@@ -29,7 +30,7 @@ function Open () {
  );
 }
 
-export default Open;
+export default OpenComponent;
 
 
 

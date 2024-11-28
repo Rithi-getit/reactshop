@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import open from 'open.js';
-import './open.css';
-
+import OpenComponent from './openComponent'; 
+import './openComponent.css'; 
+import Categories from './categories.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    < open/>
+    <OpenComponent />
   </React.StrictMode>
 );
-
