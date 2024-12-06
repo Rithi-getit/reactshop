@@ -1,5 +1,6 @@
-import React from './react';
+import React from 'react';
 import './sofas.css';
+import Cart from './cart.js';
 
 const Sofas = () => {
     const items = [
