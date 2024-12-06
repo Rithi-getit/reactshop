@@ -1,11 +1,13 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './openComponent.css';
 import Categories from './categories.js';
 
 function OpenComponent () {
+    
+    const [showCategories, setShowCategories] = useState(false);
 
     function start_shop(){
-        <Categories/>
+        setShowCategories(true);
     }
 
     return (
@@ -22,7 +24,7 @@ function OpenComponent () {
     </div>
     
     <div className = "start-button">
-    <button onClick = "start_shop()">
+    <button onClick = {start_shop}>
     START SHOPPING
     </button> </div>
     
@@ -31,10 +33,6 @@ function OpenComponent () {
 }
 
 export default OpenComponent;
-
-
-
-
 
 
 
