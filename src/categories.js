@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './categories.css';
 import Beds from './beds.js';
 import Sofas from './sofas.js';
