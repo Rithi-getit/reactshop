@@ -1,7 +1,13 @@
 import React from 'react';
 import './categories.css';
+import Beds from './beds.js';
+import Sofas from './sofas.js';
+import Tables from './table.js';
+import Seaters from './seaters.js';
 
 function Categories() {
+
+  const [selectCategories, setSelectCategories] = useState(null);
 
   return (
     <>
@@ -28,7 +34,7 @@ function Categories() {
             alt="Beds"
           />
           BEDS
-          <button onClick={() => <Beds/>}>DISCOVER YOUR COMFORT</button>
+          <button onClick={() => setSelectCategories('Beds')}>DISCOVER YOUR COMFORT</button>
         </div>
         <br />
         <div className="sofabox">
@@ -39,7 +45,7 @@ function Categories() {
             alt="Sofa"
           />
           SOFA
-          <button onClick={() => <Sofas/>}>DISCOVER YOUR COMFORT</button>
+          <button onClick={() => setSelectCategories('Sofas')}>DISCOVER YOUR COMFORT</button>
         </div>
         <br />
         <div className="tablebox">
@@ -50,7 +56,7 @@ function Categories() {
             alt="Dining Tables"
           />
           DINING TABLES
-          <button onClick={() => <Tables/>}>DISCOVER YOUR COMFORT</button>
+          <button onClick={() => setSelectCategories('Tables')}>DISCOVER YOUR COMFORT</button>
         </div>
         <br />
         <div className="seatbox">
@@ -61,7 +67,7 @@ function Categories() {
             alt="Seaters"
           />
           SEATERS
-          <button onClick={() => <Seaters/>}>DISCOVER YOUR COMFORT</button>
+          <button onClick={() => setSelectCategories('Seaters')}>DISCOVER YOUR COMFORT</button>
         </div>
       </div>
     </>
@@ -69,6 +75,8 @@ function Categories() {
 }
 
 export default Categories;
+
+
 
 
 
