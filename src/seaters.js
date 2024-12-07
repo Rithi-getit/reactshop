@@ -34,7 +34,7 @@ return (
                         <h2>{item.name}</h2>
                         <p>Color: {item.color}</p>
                         <p>Price: {item.price}</p>
-                        <button className = "add to cart" onCilck = {()=> <AddToCart/>} >ADD TO CART</button>
+                        <button className = "add to cart" onClick = {()=> <AddToCart/>} >ADD TO CART</button>
                     </li>
                 ))}
             </ul>
