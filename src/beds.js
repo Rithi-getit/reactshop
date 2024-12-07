@@ -37,7 +37,7 @@ return (
                         <p>Size: {item.size}</p>
                         <p>Dimensions: {item.dimensions}</p>
                         <p>Price: {item.price}</p>
-                        <button className = "add to cart" onCilck = {()=> <AddToCart/>} >ADD TO CART</button>
+                        <button className = "add to cart" onClick = {()=> <AddToCart/>} >ADD TO CART</button>
                     </li>
                 ))}
             </ul>
