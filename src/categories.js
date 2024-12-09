@@ -5,7 +5,7 @@ import Sofas from './sofas.js';
 import Tables from './table.js';
 import Seaters from './seaters.js';
 
-function Categories() {
+const Categories = () => {
 
   const [selectCategories, setSelectCategories] = useState(null);
 
