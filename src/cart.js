@@ -2,11 +2,7 @@ import React, {useState} from 'react';
 import './cart.css';
 import Categories from './categories';
 
-const Cart = () => {
-
-  const [cart,setCart] = useState([]);
-
-  const AddToCart = (item) => {
+  export const AddToCart = (item, cart, setCart) => {
 
       setCart ((prevState) => {
         const updatedCart = [...prevState];
@@ -23,6 +19,10 @@ const Cart = () => {
  }
  ) 
 };
+
+const Cart = () => {
+
+  const [cart,setCart] = useState([]);
 
  const RemoveItem = (product) => {
     setCart((prevState) => prevState.filter((product) => product.id !== item.id));
