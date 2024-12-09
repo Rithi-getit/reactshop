@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import './openComponent.css';
 import Categories from './categories.js';
 
-function OpenComponent () {
+const OpenComponent = () => {
     
     const [showCategories, setShowCategories] = useState(false);
 
